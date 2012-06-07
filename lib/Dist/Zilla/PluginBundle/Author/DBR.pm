@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::DBR;
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.510';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.555';
 }
 BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
@@ -22,8 +22,9 @@ class Dist::Zilla::PluginBundle::Author::DBR
         $self->add_bundle(
             Filter => {
                 -bundle => '@Classic',
-                -remove => [qw/MakeMaker PkgVersion PodVersion Readme/],
-            }
+                -remove => [qw/MakeMaker PkgVersion PodVersion Readme ExtraTests/],
+            },
+            # 'Apocalyptic',
         );
 
         $self->add_plugins(
@@ -38,6 +39,24 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'Test::ReportPrereqs',
             'Test::Portability',
             'Test::CheckDeps',
+            'Test::Legal',
+            'ReportPhase',
+            'ReportVersions',
+            'Test::Perl::Critic',
+            'MinimumVersionTests',
+            'CheckPrereqsIndexed',
+            'CheckVersionIncrement',
+            'SpellingCommonMistakesTests',
+            'Test::UseAllModules',
+            'ChangeStats::Git',
+            'MetaProvides::Class',
+            'Test::CheckManifest',
+            'SchwartzRatio',
+            'MetaTests',
+            # 'CheckChangeLog',
+            # 'CheckChangesHasContent',
+            # 'CheckExtraTests',
+            # 'RunExtraTests',
         );
     }
 }
@@ -52,32 +71,45 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.510
+version 0.555
 
 =head1 SYNOPSIS
 
 This PluginBundle is roughly equivalent to the following C<dist.ini>:
 
-  # dist.ini
-  [@Classic]
-  [Authority]
+    # dist.ini
+    [@Basic]
+    [Authority]
       authority = cpan:DBR
 
-  [AutoPrereqs]
-  [PkgVersion]
-  [TestRelease]
-  [ConfirmRelease]
-  [PodWeaver]
-
-  [Test::Compile]
-  [Test::ReportPrereqs]
-  [Test::Portability]
-  [Test::Kwalitee]
-  [Test::CheckDeps]
-  [PodCoverageTests]
-  [PodSyntaxTests]
-  [NoTabsTests]
-  [EOLTests]
+    [AutoPrereqs]
+    [PkgVersion]
+    [PodCoverageTests]
+    [PodSyntaxTests]
+    [NoTabsTests]
+    [EOLTests]
+    [Test::Compile]
+    [TestRelease]
+    [ConfirmRelease]
+    [PodWeaver]
+    [Test::Legal]
+    [ReportPhase]
+    [ReportVersions]
+    [Test::Perl::Critic]
+    [ReadmeFromPod]
+    [InstallRelease]
+    [Test::MinimumVersion]
+    [CheckPrereqsIndexed]
+    [CheckVersionIncrement]
+    [SpellingCommonMistakesTests]
+    [MetaProvides::Class]
+    [Test::CheckManifest]
+    [SchwartzRatio]
+    [CheckExtraTests]
+    [ExtraTests]
+    [RunExtraTests]
+    [Test::UseAllModules]
+    [MetaTests]
 
 =head1 AUTHOR
 

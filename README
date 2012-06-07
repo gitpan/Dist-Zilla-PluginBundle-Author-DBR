@@ -1,13 +1,52 @@
+NAME
+    Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
+VERSION
+    version 0.555
 
-This archive contains the distribution Dist-Zilla-PluginBundle-Author-DBR,
-version 0.510:
+SYNOPSIS
+    This PluginBundle is roughly equivalent to the following "dist.ini":
 
-  DBRs Dist::Zilla PluginBundle
+        # dist.ini
+        [@Basic]
+        [Authority]
+          authority = cpan:DBR
 
-This software is copyright (c) 2012 by Daniel B..
+        [AutoPrereqs]
+        [PkgVersion]
+        [PodCoverageTests]
+        [PodSyntaxTests]
+        [NoTabsTests]
+        [EOLTests]
+        [Test::Compile]
+        [TestRelease]
+        [ConfirmRelease]
+        [PodWeaver]
+        [Test::Legal]
+        [ReportPhase]
+        [ReportVersions]
+        [Test::Perl::Critic]
+        [ReadmeFromPod]
+        [InstallRelease]
+        [Test::MinimumVersion]
+        [CheckPrereqsIndexed]
+        [CheckVersionIncrement]
+        [SpellingCommonMistakesTests]
+        [MetaProvides::Class]
+        [Test::CheckManifest]
+        [SchwartzRatio]
+        [CheckExtraTests]
+        [ExtraTests]
+        [RunExtraTests]
+        [Test::UseAllModules]
+        [MetaTests]
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+AUTHOR
+    Daniel B. <dbr@cpan.org>
 
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Daniel B..
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
