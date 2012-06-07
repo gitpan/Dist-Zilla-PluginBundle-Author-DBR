@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 VERSION
-    version 0.555
+    version 0.556
 
 SYNOPSIS
     This PluginBundle is roughly equivalent to the following "dist.ini":
@@ -27,7 +27,6 @@ SYNOPSIS
         [ReportVersions]
         [Test::Perl::Critic]
         [ReadmeFromPod]
-        [InstallRelease]
         [Test::MinimumVersion]
         [CheckPrereqsIndexed]
         [CheckVersionIncrement]
@@ -35,11 +34,10 @@ SYNOPSIS
         [MetaProvides::Class]
         [Test::CheckManifest]
         [SchwartzRatio]
-        [CheckExtraTests]
-        [ExtraTests]
-        [RunExtraTests]
         [Test::UseAllModules]
         [MetaTests]
+        [InstallRelease]
+        install_command = cpanm .
 
 AUTHOR
     Daniel B. <dbr@cpan.org>

@@ -70,7 +70,7 @@ my %WriteMakefileArgs = (
     "MooseX::Declare" => 0,
     "Test::CPAN::Meta" => 0
   },
-  "VERSION" => "0.555",
+  "VERSION" => "0.556",
   "test" => {
     "TESTS" => "t/*.t"
   }

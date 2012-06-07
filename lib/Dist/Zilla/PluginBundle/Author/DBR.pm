@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::DBR;
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.555';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.556';
 }
 BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
@@ -53,6 +53,7 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'Test::CheckManifest',
             'SchwartzRatio',
             'MetaTests',
+            [ 'InstallRelease' => {'install_command' => 'cpanm --verbose .'} ],
             # 'CheckChangeLog',
             # 'CheckChangesHasContent',
             # 'CheckExtraTests',
@@ -71,7 +72,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.555
+version 0.556
 
 =head1 SYNOPSIS
 
@@ -97,7 +98,6 @@ This PluginBundle is roughly equivalent to the following C<dist.ini>:
     [ReportVersions]
     [Test::Perl::Critic]
     [ReadmeFromPod]
-    [InstallRelease]
     [Test::MinimumVersion]
     [CheckPrereqsIndexed]
     [CheckVersionIncrement]
@@ -105,11 +105,10 @@ This PluginBundle is roughly equivalent to the following C<dist.ini>:
     [MetaProvides::Class]
     [Test::CheckManifest]
     [SchwartzRatio]
-    [CheckExtraTests]
-    [ExtraTests]
-    [RunExtraTests]
     [Test::UseAllModules]
     [MetaTests]
+    [InstallRelease]
+    install_command = cpanm .
 
 =head1 AUTHOR
 
