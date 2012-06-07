@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::DBR;
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.500'; # TRIAL
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.510';
 }
 BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
@@ -37,7 +37,6 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'AutoPrereqs',
             'Test::ReportPrereqs',
             'Test::Portability',
-            'Test::Kwalitee',
             'Test::CheckDeps',
         );
     }
@@ -53,7 +52,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.500
+version 0.510
 
 =head1 SYNOPSIS
 

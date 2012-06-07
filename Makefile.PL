@@ -43,14 +43,13 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
     "Dist::Zilla::Plugin::Test::CheckDeps" => 0,
     "Dist::Zilla::Plugin::Test::Compile" => 0,
-    "Dist::Zilla::Plugin::Test::Kwalitee" => 0,
     "Dist::Zilla::Plugin::Test::Portability" => 0,
     "Dist::Zilla::Plugin::Test::ReportPrereqs" => 0,
     "Dist::Zilla::Plugin::TestRelease" => 0,
     "Dist::Zilla::PluginBundle::Filter" => 0,
     "MooseX::Declare" => 0
   },
-  "VERSION" => "0.500",
+  "VERSION" => "0.510",
   "test" => {
     "TESTS" => "t/*.t"
   }
