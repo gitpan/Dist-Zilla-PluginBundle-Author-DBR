@@ -1,9 +1,9 @@
 package Dist::Zilla::PluginBundle::Author::DBR;
-{
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.557';
-}
 BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
+}
+{
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.700';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -22,7 +22,8 @@ class Dist::Zilla::PluginBundle::Author::DBR
         $self->add_bundle(
             Filter => {
                 -bundle => '@Classic',
-                -remove => [qw/MakeMaker PkgVersion PodVersion Readme ExtraTests/],
+                -remove => [qw/PodVersion ExtraTests/],
+                # -remove => [qw/MakeMaker PkgVersion PodVersion Readme ExtraTests/],
             },
             # 'Apocalyptic',
         );
@@ -37,27 +38,35 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'TestRelease',
             'AutoPrereqs',
             'Test::ReportPrereqs',
-            'Test::Portability',
             'Test::CheckDeps',
-            'Test::Legal',
             'ReportPhase',
             'ReportVersions',
-            'Test::Perl::Critic',
             'Test::MinimumVersion',
             'CheckPrereqsIndexed',
             'CheckVersionIncrement',
             'SpellingCommonMistakesTests',
             'Test::UseAllModules',
-            'ChangeStats::Git',
             'MetaProvides::Class',
-            'Test::CheckManifest',
             'SchwartzRatio',
             'MetaTests',
-            [ 'InstallRelease' => {'install_command' => 'cpanm --verbose .'} ],
+            'CheckExtraTests',
+            'RunExtraTests',
+            'InstallGuide',
+            'PodWeaver',
+            [ 'InstallRelease'    => { 'install_command'  => 'cpanm --verbose .'  } ],
+            [ 'PruneCruft'        => { 'except'           => '\.gitignore'        } ],
+            [ 'ExecDir'           => { 'dir'              => 'bin'                } ],
+
+            # 'Test::Legal',
+            # 'ExtraTests',
+            # 'Test::Perl::Critic',
             # 'CheckChangeLog',
             # 'CheckChangesHasContent',
-            # 'CheckExtraTests',
-            # 'RunExtraTests',
+            # 'ChangeStats::Git',
+            # 'Test::CheckManifest',
+            # [ 'Test::Portability' => { 'test_vms_length'  => 0,
+            #                            'test_ansi_chars'  => 0,
+            #                            'test_one_dot'     => 0                    } ],
         );
     }
 }
@@ -72,43 +81,54 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.557
+version 0.700
 
 =head1 SYNOPSIS
 
 This PluginBundle is roughly equivalent to the following C<dist.ini>:
 
     # dist.ini
-    [@Basic]
-    [Authority]
-      authority = cpan:DBR
+    [@Filter]
+      -bundle = @Classic
+      -remove = ExtraTests
+      -remove = PodVersion
 
-    [AutoPrereqs]
-    [PkgVersion]
-    [PodCoverageTests]
-    [PodSyntaxTests]
-    [NoTabsTests]
-    [EOLTests]
-    [Test::Compile]
-    [TestRelease]
+    [Authority]
+        authority = cpan:DBR
+
     [ConfirmRelease]
-    [PodWeaver]
-    [Test::Legal]
+    [EOLTests]
+    [MetaJSON]
+    [ModuleBuild]
+    [NoTabsTests]
+    [ReadmeFromPod]
+    [TestRelease]
+    [AutoPrereqs]
+    [Test::ReportPrereqs]
+    [Test::CheckDeps]
     [ReportPhase]
     [ReportVersions]
-    [Test::Perl::Critic]
-    [ReadmeFromPod]
     [Test::MinimumVersion]
     [CheckPrereqsIndexed]
     [CheckVersionIncrement]
     [SpellingCommonMistakesTests]
-    [MetaProvides::Class]
-    [Test::CheckManifest]
-    [SchwartzRatio]
     [Test::UseAllModules]
+    [MetaProvides::Class]
+    [SchwartzRatio]
     [MetaTests]
+    [CheckExtraTests]
+    [RunExtraTests]
+    [InstallGuide]
+    [PodWeaver]
+
     [InstallRelease]
-    install_command = cpanm .
+      install_command  = 'cpanm --verbose .'
+
+    [PruneCruft]
+      except = '.gitignore'
+
+    [ExecDir]
+      dir= bin
 
 =head1 AUTHOR
 
