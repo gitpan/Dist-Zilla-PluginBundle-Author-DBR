@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 VERSION
-    version 0.701
+    version 0.702
 
 SYNOPSIS
     This PluginBundle is roughly equivalent to the following "dist.ini":
@@ -42,6 +42,7 @@ SYNOPSIS
         [PodWeaver]
 
         [InstallRelease]
+          install_command  = cpanm
 
         [PruneCruft]
           except = '.gitignore'

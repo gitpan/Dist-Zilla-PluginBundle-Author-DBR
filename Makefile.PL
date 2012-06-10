@@ -76,7 +76,7 @@ my %WriteMakefileArgs = (
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0
   },
-  "VERSION" => "0.701",
+  "VERSION" => "0.702",
   "test" => {
     "TESTS" => "t/*.t"
   }
