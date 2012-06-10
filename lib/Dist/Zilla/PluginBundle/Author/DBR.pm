@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.702';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.703';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -53,7 +53,6 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'RunExtraTests',
             'InstallGuide',
             'PodWeaver',
-            [ 'InstallRelease'    => { 'install_command'  => 'cpanm'              } ],
             [ 'PruneCruft'        => { 'except'           => '\.gitignore'        } ],
             [ 'ExecDir'           => { 'dir'              => 'bin'                } ],
 
@@ -67,6 +66,8 @@ class Dist::Zilla::PluginBundle::Author::DBR
             # [ 'Test::Portability' => { 'test_vms_length'  => 0,
             #                            'test_ansi_chars'  => 0,
             #                            'test_one_dot'     => 0                    } ],
+            # [ 'InstallRelease'    => { 'install_command'  => 'cpanm'              } ],
+            
         );
     }
 }
@@ -81,7 +82,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.702
+version 0.703
 
 =head1 SYNOPSIS
 
