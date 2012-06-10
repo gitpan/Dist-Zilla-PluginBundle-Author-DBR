@@ -24,7 +24,7 @@ name: Dist-Zilla-PluginBundle-Author-DBR
 provides:
   Dist::Zilla::PluginBundle::Author::DBR:
     file: lib/Dist/Zilla/PluginBundle/Author/DBR.pm
-    version: 0.556
+    version: 0.557
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -66,5 +66,5 @@ requires:
   Dist::Zilla::PluginBundle::Filter: 0
   MooseX::Declare: 0
   Test::CPAN::Meta: 0
-version: 0.556
+version: 0.557
 x_authority: cpan:DBR

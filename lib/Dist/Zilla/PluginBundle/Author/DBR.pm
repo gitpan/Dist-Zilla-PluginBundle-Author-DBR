@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::DBR;
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.556';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.557';
 }
 BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
@@ -43,7 +43,7 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'ReportPhase',
             'ReportVersions',
             'Test::Perl::Critic',
-            'MinimumVersionTests',
+            'Test::MinimumVersion',
             'CheckPrereqsIndexed',
             'CheckVersionIncrement',
             'SpellingCommonMistakesTests',
@@ -72,7 +72,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.556
+version 0.557
 
 =head1 SYNOPSIS
 
