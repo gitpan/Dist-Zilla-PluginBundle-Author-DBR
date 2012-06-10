@@ -90,11 +90,11 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "0.700"
+         "version" : "0.701"
       }
    },
    "release_status" : "stable",
-   "version" : "0.700",
+   "version" : "0.701",
    "x_authority" : "cpan:DBR"
 }
 

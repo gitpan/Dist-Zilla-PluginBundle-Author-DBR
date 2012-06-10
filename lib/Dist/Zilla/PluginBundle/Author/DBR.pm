@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.700';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.701';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -53,7 +53,7 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'RunExtraTests',
             'InstallGuide',
             'PodWeaver',
-            [ 'InstallRelease'    => { 'install_command'  => 'cpanm --verbose .'  } ],
+            'InstallRelease',
             [ 'PruneCruft'        => { 'except'           => '\.gitignore'        } ],
             [ 'ExecDir'           => { 'dir'              => 'bin'                } ],
 
@@ -81,7 +81,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.700
+version 0.701
 
 =head1 SYNOPSIS
 
@@ -122,7 +122,6 @@ This PluginBundle is roughly equivalent to the following C<dist.ini>:
     [PodWeaver]
 
     [InstallRelease]
-      install_command  = 'cpanm --verbose .'
 
     [PruneCruft]
       except = '.gitignore'
