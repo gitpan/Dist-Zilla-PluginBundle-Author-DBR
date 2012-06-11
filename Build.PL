@@ -29,7 +29,7 @@ my %module_build_args = (
     "Daniel B. <dbr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-Author-DBR",
-  "dist_version" => "0.705",
+  "dist_version" => "0.707",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::Author::DBR",
   "recommends" => {},
@@ -47,6 +47,7 @@ my %module_build_args = (
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::MetaJSON" => 0,
     "Dist::Zilla::Plugin::MetaProvides::Class" => 0,
+    "Dist::Zilla::Plugin::MetaProvides::Package" => 0,
     "Dist::Zilla::Plugin::MetaTests" => 0,
     "Dist::Zilla::Plugin::ModuleBuild" => 0,
     "Dist::Zilla::Plugin::NoTabsTests" => 0,

@@ -28,7 +28,7 @@ name: Dist-Zilla-PluginBundle-Author-DBR
 provides:
   Dist::Zilla::PluginBundle::Author::DBR:
     file: lib/Dist/Zilla/PluginBundle/Author/DBR.pm
-    version: 0.705
+    version: 0.707
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -42,6 +42,7 @@ requires:
   Dist::Zilla::Plugin::InstallRelease: 0
   Dist::Zilla::Plugin::MetaJSON: 0
   Dist::Zilla::Plugin::MetaProvides::Class: 0
+  Dist::Zilla::Plugin::MetaProvides::Package: 0
   Dist::Zilla::Plugin::MetaTests: 0
   Dist::Zilla::Plugin::ModuleBuild: 0
   Dist::Zilla::Plugin::NoTabsTests: 0
@@ -72,5 +73,5 @@ requires:
   Pod::Weaver::Plugin::WikiDoc: 0
   Test::CPAN::Meta: 0
   Test::UseAllModules: 0
-version: 0.705
+version: 0.707
 x_authority: cpan:DBR

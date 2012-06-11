@@ -45,6 +45,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::MetaJSON" => 0,
     "Dist::Zilla::Plugin::MetaProvides::Class" => 0,
+    "Dist::Zilla::Plugin::MetaProvides::Package" => 0,
     "Dist::Zilla::Plugin::MetaTests" => 0,
     "Dist::Zilla::Plugin::ModuleBuild" => 0,
     "Dist::Zilla::Plugin::NoTabsTests" => 0,
@@ -76,7 +77,7 @@ my %WriteMakefileArgs = (
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0
   },
-  "VERSION" => "0.705",
+  "VERSION" => "0.707",
   "test" => {
     "TESTS" => "t/*.t"
   }
