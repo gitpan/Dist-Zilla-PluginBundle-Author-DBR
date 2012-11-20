@@ -44,6 +44,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::Run::Release
   Dist::Zilla::Plugin::RunExtraTests
   Dist::Zilla::Plugin::SchwartzRatio
+  Dist::Zilla::Plugin::ShareDir::Tarball
   Dist::Zilla::Plugin::SpellingCommonMistakesTests
   Dist::Zilla::Plugin::TaskWeaver
   Dist::Zilla::Plugin::Test::CheckDeps
