@@ -72,13 +72,14 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Test::ReportPrereqs" => 0,
     "Dist::Zilla::Plugin::Test::UseAllModules" => 0,
     "Dist::Zilla::Plugin::TestRelease" => 0,
-    "Dist::Zilla::PluginBundle::Filter" => 0,
+    "Dist::Zilla::Role::PluginBundle::Merged" => 0,
     "MooseX::Declare" => 0,
     "Pod::Weaver::Plugin::WikiDoc" => 0,
     "Test::CPAN::Meta" => 0,
-    "Test::UseAllModules" => 0
+    "Test::UseAllModules" => 0,
+    "true" => 0
   },
-  "VERSION" => "0.777",
+  "VERSION" => "0.800",
   "test" => {
     "TESTS" => "t/*.t"
   }

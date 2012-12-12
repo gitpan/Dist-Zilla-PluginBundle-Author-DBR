@@ -57,20 +57,24 @@ my @modules = qw(
   Dist::Zilla::Plugin::Test::ReportPrereqs
   Dist::Zilla::Plugin::Test::UseAllModules
   Dist::Zilla::Plugin::TestRelease
-  Dist::Zilla::PluginBundle::Filter
+  Dist::Zilla::Role::PluginBundle::Merged
   ExtUtils::MakeMaker
   File::Spec::Functions
   List::Util
   Module::Build
   MooseX::Declare
+  Pod::Coverage::TrustPod
   Pod::Weaver::Plugin::WikiDoc
   Scalar::Util
   Test::CPAN::Meta
   Test::CheckDeps
   Test::More
+  Test::Pod
+  Test::Pod::Coverage
   Test::UseAllModules
   perl
   strict
+  true
   warnings
 );
 

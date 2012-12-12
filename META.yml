@@ -19,7 +19,7 @@ configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,7 +28,7 @@ name: Dist-Zilla-PluginBundle-Author-DBR
 provides:
   Dist::Zilla::PluginBundle::Author::DBR:
     file: lib/Dist/Zilla/PluginBundle/Author/DBR.pm
-    version: 0.777
+    version: 0.800
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -69,10 +69,11 @@ requires:
   Dist::Zilla::Plugin::Test::ReportPrereqs: 0
   Dist::Zilla::Plugin::Test::UseAllModules: 0
   Dist::Zilla::Plugin::TestRelease: 0
-  Dist::Zilla::PluginBundle::Filter: 0
+  Dist::Zilla::Role::PluginBundle::Merged: 0
   MooseX::Declare: 0
   Pod::Weaver::Plugin::WikiDoc: 0
   Test::CPAN::Meta: 0
   Test::UseAllModules: 0
-version: 0.777
+  true: 0
+version: 0.800
 x_authority: cpan:DBR
