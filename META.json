@@ -37,6 +37,7 @@
          "requires" : {
             "Dist::Zilla" : "0",
             "Dist::Zilla::Plugin::Authority" : "0",
+            "Dist::Zilla::Plugin::AutoMetaResources" : "0",
             "Dist::Zilla::Plugin::AutoPrereqs" : "0",
             "Dist::Zilla::Plugin::CheckChangeLog" : "0",
             "Dist::Zilla::Plugin::CheckChangesHasContent" : "0",
@@ -45,6 +46,7 @@
             "Dist::Zilla::Plugin::CheckVersionIncrement" : "0",
             "Dist::Zilla::Plugin::ConfirmRelease" : "0",
             "Dist::Zilla::Plugin::EOLTests" : "0",
+            "Dist::Zilla::Plugin::HasVersionTests" : "0",
             "Dist::Zilla::Plugin::InstallGuide" : "0",
             "Dist::Zilla::Plugin::InstallRelease" : "0",
             "Dist::Zilla::Plugin::MetaJSON" : "0",
@@ -86,6 +88,7 @@
             "Pod::Weaver::Plugin::WikiDoc" : "0",
             "Test::CPAN::Meta" : "0",
             "Test::UseAllModules" : "0",
+            "inc::Module::Install" : "0",
             "true" : "0"
          }
       },
@@ -108,11 +111,19 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "0.842"
+         "version" : "0.900"
       }
    },
    "release_status" : "stable",
-   "version" : "0.842",
+   "resources" : {
+      "homepage" : "https://metacpan.org/module/Dist-Zilla-PluginBundle-Author-DBR",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/xdbr/dist-zilla-pluginbundle-author-dbr.git",
+         "web" : "https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr"
+      }
+   },
+   "version" : "0.900",
    "x_authority" : "cpan:DBR"
 }
 

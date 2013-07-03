@@ -25,6 +25,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Dist::Zilla" => 0,
     "Dist::Zilla::Plugin::Authority" => 0,
+    "Dist::Zilla::Plugin::AutoMetaResources" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -33,6 +34,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::CheckVersionIncrement" => 0,
     "Dist::Zilla::Plugin::ConfirmRelease" => 0,
     "Dist::Zilla::Plugin::EOLTests" => 0,
+    "Dist::Zilla::Plugin::HasVersionTests" => 0,
     "Dist::Zilla::Plugin::InstallGuide" => 0,
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::MetaJSON" => 0,
@@ -74,6 +76,7 @@ my %WriteMakefileArgs = (
     "Pod::Weaver::Plugin::WikiDoc" => 0,
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0,
+    "inc::Module::Install" => 0,
     "true" => 0
   },
   "TEST_REQUIRES" => {
@@ -88,7 +91,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.842",
+  "VERSION" => "0.900",
   "test" => {
     "TESTS" => "t/*.t"
   }

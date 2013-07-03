@@ -19,6 +19,7 @@ xt/release/check-manifest.t
 xt/release/common_spelling.t
 xt/release/distmeta.t
 xt/release/eol.t
+xt/release/has-version.t
 xt/release/minimum-version.t
 xt/release/no-tabs.t
 xt/release/pod-coverage.t

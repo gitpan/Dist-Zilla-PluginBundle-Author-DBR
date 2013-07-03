@@ -13,6 +13,7 @@ my @modules = qw(
   Carp
   Dist::Zilla
   Dist::Zilla::Plugin::Authority
+  Dist::Zilla::Plugin::AutoMetaResources
   Dist::Zilla::Plugin::AutoPrereqs
   Dist::Zilla::Plugin::CheckChangeLog
   Dist::Zilla::Plugin::CheckChangesHasContent
@@ -21,6 +22,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::CheckVersionIncrement
   Dist::Zilla::Plugin::ConfirmRelease
   Dist::Zilla::Plugin::EOLTests
+  Dist::Zilla::Plugin::HasVersionTests
   Dist::Zilla::Plugin::InstallGuide
   Dist::Zilla::Plugin::InstallRelease
   Dist::Zilla::Plugin::MetaJSON
@@ -69,6 +71,7 @@ my @modules = qw(
   Test::CheckDeps
   Test::More
   Test::UseAllModules
+  inc::Module::Install
   perl
   strict
   true

@@ -18,7 +18,7 @@ my %module_build_args = (
     "Daniel B. <dbr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-Author-DBR",
-  "dist_version" => "0.842",
+  "dist_version" => "0.900",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::Author::DBR",
   "recommends" => {},
@@ -26,6 +26,7 @@ my %module_build_args = (
   "requires" => {
     "Dist::Zilla" => 0,
     "Dist::Zilla::Plugin::Authority" => 0,
+    "Dist::Zilla::Plugin::AutoMetaResources" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -34,6 +35,7 @@ my %module_build_args = (
     "Dist::Zilla::Plugin::CheckVersionIncrement" => 0,
     "Dist::Zilla::Plugin::ConfirmRelease" => 0,
     "Dist::Zilla::Plugin::EOLTests" => 0,
+    "Dist::Zilla::Plugin::HasVersionTests" => 0,
     "Dist::Zilla::Plugin::InstallGuide" => 0,
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::MetaJSON" => 0,
@@ -75,6 +77,7 @@ my %module_build_args = (
     "Pod::Weaver::Plugin::WikiDoc" => 0,
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0,
+    "inc::Module::Install" => 0,
     "true" => 0
   },
   "script_files" => [],
