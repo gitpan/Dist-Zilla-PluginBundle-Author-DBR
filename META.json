@@ -106,11 +106,11 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "0.840"
+         "version" : "0.841"
       }
    },
    "release_status" : "stable",
-   "version" : "0.840",
+   "version" : "0.841",
    "x_authority" : "cpan:DBR"
 }
 
