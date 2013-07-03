@@ -29,6 +29,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::MetaTests
   Dist::Zilla::Plugin::MinimumPerl
   Dist::Zilla::Plugin::ModuleBuild
+  Dist::Zilla::Plugin::NextRelease
   Dist::Zilla::Plugin::NoTabsTests
   Dist::Zilla::Plugin::PkgVersion
   Dist::Zilla::Plugin::PodCoverageTests
@@ -43,6 +44,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::ShareDir::Tarball
   Dist::Zilla::Plugin::SpellingCommonMistakesTests
   Dist::Zilla::Plugin::TaskWeaver
+  Dist::Zilla::Plugin::Test::ChangesHasContent
   Dist::Zilla::Plugin::Test::CheckDeps
   Dist::Zilla::Plugin::Test::CheckManifest
   Dist::Zilla::Plugin::Test::Compile

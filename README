@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 VERSION
-    version 0.841
+    version 0.842
 
 SYNOPSIS
     This PluginBundle is roughly equivalent to the following "dist.ini":
