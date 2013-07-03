@@ -88,7 +88,6 @@
             "Pod::Weaver::Plugin::WikiDoc" : "0",
             "Test::CPAN::Meta" : "0",
             "Test::UseAllModules" : "0",
-            "inc::Module::Install" : "0",
             "true" : "0"
          }
       },
@@ -111,7 +110,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "0.900"
+         "version" : "0.920"
       }
    },
    "release_status" : "stable",
@@ -123,7 +122,7 @@
          "web" : "https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr"
       }
    },
-   "version" : "0.900",
+   "version" : "0.920",
    "x_authority" : "cpan:DBR"
 }
 

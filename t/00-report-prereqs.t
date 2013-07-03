@@ -71,7 +71,6 @@ my @modules = qw(
   Test::CheckDeps
   Test::More
   Test::UseAllModules
-  inc::Module::Install
   perl
   strict
   true

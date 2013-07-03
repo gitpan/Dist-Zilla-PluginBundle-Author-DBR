@@ -28,7 +28,7 @@ name: Dist-Zilla-PluginBundle-Author-DBR
 provides:
   Dist::Zilla::PluginBundle::Author::DBR:
     file: lib/Dist/Zilla/PluginBundle/Author/DBR.pm
-    version: 0.900
+    version: 0.920
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::Authority: 0
@@ -83,10 +83,9 @@ requires:
   Pod::Weaver::Plugin::WikiDoc: 0
   Test::CPAN::Meta: 0
   Test::UseAllModules: 0
-  inc::Module::Install: 0
   true: 0
 resources:
   homepage: https://metacpan.org/module/Dist-Zilla-PluginBundle-Author-DBR
   repository: git://github.com/xdbr/dist-zilla-pluginbundle-author-dbr.git
-version: 0.900
+version: 0.920
 x_authority: cpan:DBR
