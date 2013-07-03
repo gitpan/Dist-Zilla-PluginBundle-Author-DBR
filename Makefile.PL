@@ -12,17 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "DBRs Dist::Zilla PluginBundle",
   "AUTHOR" => "Daniel B. <dbr\@cpan.org>",
   "BUILD_REQUIRES" => {
-    "Carp" => 0,
-    "ExtUtils::MakeMaker" => 0,
-    "File::Spec::Functions" => 0,
-    "List::Util" => 0,
-    "Module::Build" => "0.3601",
-    "Scalar::Util" => 0,
-    "Test::CheckDeps" => "0.002",
-    "Test::More" => "0.94",
-    "Test::UseAllModules" => 0,
-    "strict" => 0,
-    "warnings" => 0
+    "Module::Build" => "0.3601"
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -34,6 +24,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Dist::Zilla::PluginBundle::Author::DBR",
   "PREREQ_PM" => {
     "Dist::Zilla" => 0,
+    "Dist::Zilla::Plugin::Authority" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -42,11 +33,13 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::CheckVersionIncrement" => 0,
     "Dist::Zilla::Plugin::ConfirmRelease" => 0,
     "Dist::Zilla::Plugin::EOLTests" => 0,
+    "Dist::Zilla::Plugin::InstallGuide" => 0,
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::MetaJSON" => 0,
     "Dist::Zilla::Plugin::MetaProvides::Class" => 0,
     "Dist::Zilla::Plugin::MetaProvides::Package" => 0,
     "Dist::Zilla::Plugin::MetaTests" => 0,
+    "Dist::Zilla::Plugin::MinimumPerl" => 0,
     "Dist::Zilla::Plugin::ModuleBuild" => 0,
     "Dist::Zilla::Plugin::NoTabsTests" => 0,
     "Dist::Zilla::Plugin::PkgVersion" => 0,
@@ -72,19 +65,46 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Test::ReportPrereqs" => 0,
     "Dist::Zilla::Plugin::Test::UseAllModules" => 0,
     "Dist::Zilla::Plugin::TestRelease" => 0,
+    "Dist::Zilla::PluginBundle::Git" => 0,
     "Dist::Zilla::Role::PluginBundle::Merged" => 0,
     "MooseX::Declare" => 0,
+    "Pod::Weaver::Plugin::Encoding" => 0,
     "Pod::Weaver::Plugin::WikiDoc" => 0,
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0,
     "true" => 0
   },
-  "VERSION" => "0.800",
+  "TEST_REQUIRES" => {
+    "Carp" => 0,
+    "ExtUtils::MakeMaker" => 0,
+    "File::Spec::Functions" => 0,
+    "List::Util" => 0,
+    "Scalar::Util" => 0,
+    "Test::CheckDeps" => "0.006",
+    "Test::More" => "0.94",
+    "Test::UseAllModules" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "VERSION" => "0.830",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

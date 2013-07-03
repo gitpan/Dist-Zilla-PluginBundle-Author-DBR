@@ -3,19 +3,14 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.800';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.830';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
 # ABSTRACT: DBRs Dist::Zilla PluginBundle
 
-# package Dist::Zilla::PluginBundle::Foobar;
-# Moose::with 'Dist::Zilla::Role::PluginBundle::Merged';
-# sub configure { shift->add_merged( qw[ Plugin1 Plugin2 Plugin3 Plugin4 ] ); }
-
-
-use MooseX::Declare;
 use true;
+use MooseX::Declare;
 
 class Dist::Zilla::PluginBundle::Author::DBR
  with Dist::Zilla::Role::PluginBundle::Merged
@@ -30,7 +25,7 @@ class Dist::Zilla::PluginBundle::Author::DBR
             },
             # 'Apocalyptic',
         );
-    
+
         $self->add_merged(
             qw[
                 =Dist::Zilla::Plugin::ConfirmRelease
@@ -77,7 +72,7 @@ class Dist::Zilla::PluginBundle::Author::DBR
     }
 }
 
-
+__END__
 
 =pod
 
@@ -87,7 +82,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.800
+version 0.830
 
 =head1 SYNOPSIS
 
@@ -148,7 +143,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-
