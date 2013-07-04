@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.920';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '0.930';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -63,6 +63,13 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'Authority' => {
                 authority => 'cpan:DBR'
             },
+            'AutoMetaResources' => {
+                'homepage'        => 'https://metacpan.org/module/%{dist}',
+                'repository.type' => 'git',
+                'repository.url'  => 'git://github.com/xdbr/%{dist}.git',
+                'repository.web'  => 'http://github.com/xdbr/%{dist}',
+                'bugtracker.web'  => 'http://github.com/xdbr/%{dist}/issues',
+            },
             '@Git'      => {
                 changelog        => 'Changes'      ,       # this is the default
                 allow_dirty      => 'dist.ini'     ,       # see Git::Check...
@@ -100,7 +107,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 0.920
+version 0.930
 
 =head1 SYNOPSIS
 
@@ -116,8 +123,11 @@ This PluginBundle is roughly equivalent to the following C<dist.ini>:
     authority        = cpan:DBR
 
     [AutoMetaResources]
-    repository.github   = user:xdbr
     homepage            = https://metacpan.org/module/%{dist}
+    repository.type     = git
+    repository.url      = git://github.com/xdbr/%{dist}.git
+    repository.web      = http://github.com/xdbr/%{dist}
+    bugtracker.web      = http://github.com/xdbr/%{dist}/issues
 
 
     [@Git]

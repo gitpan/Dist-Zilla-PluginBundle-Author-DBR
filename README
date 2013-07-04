@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 VERSION
-    version 0.920
+    version 0.930
 
 SYNOPSIS
     This PluginBundle is roughly equivalent to the following "dist.ini":
@@ -17,8 +17,11 @@ SYNOPSIS
         authority        = cpan:DBR
 
         [AutoMetaResources]
-        repository.github   = user:xdbr
         homepage            = https://metacpan.org/module/%{dist}
+        repository.type     = git
+        repository.url      = git://github.com/xdbr/%{dist}.git
+        repository.web      = http://github.com/xdbr/%{dist}
+        bugtracker.web      = http://github.com/xdbr/%{dist}/issues
 
 
         [@Git]
