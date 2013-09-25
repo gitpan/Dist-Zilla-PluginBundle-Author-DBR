@@ -111,11 +111,17 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.1.0"
       }
    },
    "release_status" : "stable",
-   "version" : "1.0.0",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr/issues"
+      },
+      "homepage" : "https://metacpan.org/module/Dist-Zilla-PluginBundle-Author-DBR"
+   },
+   "version" : "1.1.0",
    "x_authority" : "cpan:DBR"
 }
 

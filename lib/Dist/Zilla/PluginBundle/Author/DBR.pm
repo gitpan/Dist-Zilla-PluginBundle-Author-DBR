@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.0.0';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.1.0';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -64,12 +64,17 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'Authority' => {
                 authority => 'cpan:DBR'
             },
+            # 'AutoMetaResources' => {
+            #     'homepage'        => 'https://metacpan.org/module/%{dist}',
+            #     'repository.type' => 'git',
+            #     'repository.url'  => 'git://github.com/xdbr/%{dist}.git',
+            #     'repository.web'  => 'http://github.com/xdbr/%{dist}',
+            #     'bugtracker.web'  => 'http://github.com/xdbr/%{dist}/issues',
+            # },
             'AutoMetaResources' => {
-                'homepage'        => 'https://metacpan.org/module/%{dist}',
-                'repository.type' => 'git',
-                'repository.url'  => 'git://github.com/xdbr/%{dist}.git',
-                'repository.web'  => 'http://github.com/xdbr/%{dist}',
-                'bugtracker.web'  => 'http://github.com/xdbr/%{dist}/issues',
+                'bugtracker.github' => 1,
+                'repository.github' => [{ user => 'xdbr' }],
+                'homepage' => 'https://metacpan.org/module/%{dist}',
             },
             '@Git'      => {
                 changelog        => 'Changes'      ,       # this is the default
@@ -102,13 +107,15 @@ __END__
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 1.0.0
+version 1.1.0
 
 =head1 SYNOPSIS
 
@@ -249,5 +256,14 @@ This software is copyright (c) 2012 by Daniel B..
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =cut

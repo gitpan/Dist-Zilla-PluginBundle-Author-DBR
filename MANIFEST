@@ -14,6 +14,7 @@ t/00-check-deps.t
 t/00-load.t
 t/00-report-prereqs.t
 t/000-report-versions.t
+weaver.ini
 xt/release/changes_has_content.t
 xt/release/check-manifest.t
 xt/release/common_spelling.t
