@@ -46,6 +46,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::ShareDir::Tarball
   Dist::Zilla::Plugin::SpellingCommonMistakesTests
   Dist::Zilla::Plugin::TaskWeaver
+  Dist::Zilla::Plugin::Test::CPAN::Changes
   Dist::Zilla::Plugin::Test::ChangesHasContent
   Dist::Zilla::Plugin::Test::CheckDeps
   Dist::Zilla::Plugin::Test::CheckManifest
