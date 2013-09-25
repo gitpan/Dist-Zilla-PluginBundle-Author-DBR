@@ -22,6 +22,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::CheckVersionIncrement
   Dist::Zilla::Plugin::ConfirmRelease
   Dist::Zilla::Plugin::EOLTests
+  Dist::Zilla::Plugin::GithubMeta
   Dist::Zilla::Plugin::HasVersionTests
   Dist::Zilla::Plugin::InstallGuide
   Dist::Zilla::Plugin::InstallRelease

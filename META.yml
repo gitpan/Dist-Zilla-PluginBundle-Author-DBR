@@ -28,7 +28,7 @@ name: Dist-Zilla-PluginBundle-Author-DBR
 provides:
   Dist::Zilla::PluginBundle::Author::DBR:
     file: lib/Dist/Zilla/PluginBundle/Author/DBR.pm
-    version: v1.1.0
+    version: v1.2.0
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::Authority: 0
@@ -41,6 +41,7 @@ requires:
   Dist::Zilla::Plugin::CheckVersionIncrement: 0
   Dist::Zilla::Plugin::ConfirmRelease: 0
   Dist::Zilla::Plugin::EOLTests: 0
+  Dist::Zilla::Plugin::GithubMeta: 0
   Dist::Zilla::Plugin::HasVersionTests: 0
   Dist::Zilla::Plugin::InstallGuide: 0
   Dist::Zilla::Plugin::InstallRelease: 0
@@ -87,6 +88,7 @@ requires:
   true: 0
 resources:
   bugtracker: https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr/issues
-  homepage: https://metacpan.org/module/Dist-Zilla-PluginBundle-Author-DBR
-version: 1.1.0
+  homepage: https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR
+  repository: https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR.git
+version: 1.2.0
 x_authority: cpan:DBR
