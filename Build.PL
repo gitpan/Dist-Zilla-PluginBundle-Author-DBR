@@ -18,7 +18,7 @@ my %module_build_args = (
     "Daniel B. <dbr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-Author-DBR",
-  "dist_version" => "1.2.0",
+  "dist_version" => "1.2.2",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::Author::DBR",
   "recommends" => {},
@@ -26,7 +26,6 @@ my %module_build_args = (
   "requires" => {
     "Dist::Zilla" => 0,
     "Dist::Zilla::Plugin::Authority" => 0,
-    "Dist::Zilla::Plugin::AutoMetaResources" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -77,6 +76,7 @@ my %module_build_args = (
     "MooseX::Declare" => 0,
     "Pod::Weaver::Plugin::Encoding" => 0,
     "Pod::Weaver::Plugin::WikiDoc" => 0,
+    "Pod::Weaver::Section::Support" => 0,
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0,
     "true" => 0

@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.0';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.2';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -36,7 +36,6 @@ class Dist::Zilla::PluginBundle::Author::DBR
                 CheckVersionIncrement
                 ConfirmRelease
                 EOLTests
-                GithubMeta
                 HasVersionTests
                 InstallGuide
                 MetaJSON
@@ -65,10 +64,13 @@ class Dist::Zilla::PluginBundle::Author::DBR
             'Authority' => {
                 authority => 'cpan:DBR'
             },
-            'AutoMetaResources' => {
-                'bugtracker.github' => 1,
-                'repository.github' => [{ user => 'xdbr' }],
-                'homepage' => 'https://metacpan.org/module/%{dist}',
+            # 'AutoMetaResources' => {
+            #     'bugtracker.github' => 1,
+            #     'repository.github' => [{ user => 'xdbr' }],
+            #     'homepage' => 'https://metacpan.org/module/%{dist}',
+            # },
+            'GithubMeta' => {
+                issues => 1,
             },
             '@Git'      => {
                 changelog        => 'Changes'      ,       # this is the default
@@ -109,7 +111,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 1.2.0
+version 1.2.2
 
 =head1 SYNOPSIS
 
@@ -252,13 +254,45 @@ This software is copyright (c) 2012 by Daniel B..
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
-=head1 BUGS
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
-Please report any bugs or feature requests on the bugtracker website
-https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr/issues
+=head1 SUPPORT
 
-When submitting a bug or request, please include a test-file or a
-patch to an existing test-file that illustrates the bug or desired
-feature.
+=head2 Websites
+
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
+
+=over 4
+
+=item *
+
+MetaCPAN
+
+A modern, open-source CPAN search engine, useful to view POD in HTML format.
+
+L<http://metacpan.org/release/Dist-Zilla-PluginBundle-Author-DBR>
+
+=back
+
+=head2 Email
+
+You can email the author of this module at C<DBR@cpan.org> asking for help with any problems you have.
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the web
+interface at L<https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR/issues>. You will be automatically notified of any
+progress on the request by the system.
+
+=head2 Source Code
+
+The code is open to the world, and available for you to hack on. Please feel free to browse it and play
+with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
+from your repository :)
+
+L<https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR>
+
+  git clone https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR.git
 
 =cut

@@ -13,7 +13,6 @@ my @modules = qw(
   Carp
   Dist::Zilla
   Dist::Zilla::Plugin::Authority
-  Dist::Zilla::Plugin::AutoMetaResources
   Dist::Zilla::Plugin::AutoPrereqs
   Dist::Zilla::Plugin::CheckChangeLog
   Dist::Zilla::Plugin::CheckChangesHasContent
@@ -68,6 +67,7 @@ my @modules = qw(
   MooseX::Declare
   Pod::Weaver::Plugin::Encoding
   Pod::Weaver::Plugin::WikiDoc
+  Pod::Weaver::Section::Support
   Scalar::Util
   Test::CPAN::Meta
   Test::CheckDeps

@@ -25,7 +25,6 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Dist::Zilla" => 0,
     "Dist::Zilla::Plugin::Authority" => 0,
-    "Dist::Zilla::Plugin::AutoMetaResources" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -76,6 +75,7 @@ my %WriteMakefileArgs = (
     "MooseX::Declare" => 0,
     "Pod::Weaver::Plugin::Encoding" => 0,
     "Pod::Weaver::Plugin::WikiDoc" => 0,
+    "Pod::Weaver::Section::Support" => 0,
     "Test::CPAN::Meta" => 0,
     "Test::UseAllModules" => 0,
     "true" => 0
@@ -92,7 +92,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.2.0",
+  "VERSION" => "1.2.2",
   "test" => {
     "TESTS" => "t/*.t"
   }

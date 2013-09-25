@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 VERSION
-    version 1.2.0
+    version 1.2.2
 
 SYNOPSIS
     This PluginBundle is roughly equivalent to the following "dist.ini":
@@ -142,10 +142,36 @@ COPYRIGHT AND LICENSE
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
 
-BUGS
-    Please report any bugs or feature requests on the bugtracker website
-    https://github.com/xdbr/dist-zilla-pluginbundle-author-dbr/issues
+SUPPORT
+  Websites
+    The following websites have more information about this module, and may
+    be of help to you. As always, in addition to those websites please use
+    your favorite search engine to discover more resources.
 
-    When submitting a bug or request, please include a test-file or a patch
-    to an existing test-file that illustrates the bug or desired feature.
+    *   MetaCPAN
+
+        A modern, open-source CPAN search engine, useful to view POD in HTML
+        format.
+
+        <http://metacpan.org/release/Dist-Zilla-PluginBundle-Author-DBR>
+
+  Email
+    You can email the author of this module at "DBR@cpan.org" asking for
+    help with any problems you have.
+
+  Bugs / Feature Requests
+    Please report any bugs or feature requests through the web interface at
+    <https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR/issues>. You
+    will be automatically notified of any progress on the request by the
+    system.
+
+  Source Code
+    The code is open to the world, and available for you to hack on. Please
+    feel free to browse it and play with it, or whatever. If you want to
+    contribute patches, please send me a diff or prod me to pull from your
+    repository :)
+
+    <https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR>
+
+      git clone https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR.git
 
