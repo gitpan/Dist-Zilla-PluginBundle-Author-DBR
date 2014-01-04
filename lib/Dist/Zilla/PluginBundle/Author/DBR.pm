@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.2';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.3';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -103,15 +103,13 @@ __END__
 
 =pod
 
-=encoding utf-8
-
 =head1 NAME
 
 Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 1.2.2
+version 1.2.3
 
 =head1 SYNOPSIS
 
@@ -238,7 +236,6 @@ This PluginBundle is roughly equivalent to the following C<dist.ini>:
     Dist::Zilla::Plugin::TestRelease                  = 0
     Dist::Zilla::PluginBundle::Git                    = 0
     Dist::Zilla::Role::PluginBundle::Merged           = 0
-    Pod::Weaver::Plugin::Encoding                     = 0
     Pod::Weaver::Plugin::WikiDoc                      = 0
     Test::CPAN::Meta                                  = 0
     Test::UseAllModules                               = 0

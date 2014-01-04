@@ -65,7 +65,6 @@ my @modules = qw(
   List::Util
   Module::Build
   MooseX::Declare
-  Pod::Weaver::Plugin::Encoding
   Pod::Weaver::Plugin::WikiDoc
   Pod::Weaver::Section::Support
   Scalar::Util

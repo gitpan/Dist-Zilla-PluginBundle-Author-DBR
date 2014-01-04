@@ -73,7 +73,6 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::PluginBundle::Git" => 0,
     "Dist::Zilla::Role::PluginBundle::Merged" => 0,
     "MooseX::Declare" => 0,
-    "Pod::Weaver::Plugin::Encoding" => 0,
     "Pod::Weaver::Plugin::WikiDoc" => 0,
     "Pod::Weaver::Section::Support" => 0,
     "Test::CPAN::Meta" => 0,
@@ -92,7 +91,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.2.2",
+  "VERSION" => "1.2.3",
   "test" => {
     "TESTS" => "t/*.t"
   }
