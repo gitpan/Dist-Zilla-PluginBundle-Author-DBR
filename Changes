@@ -1,3 +1,7 @@
+1.2.5     2014-01-07 17:34:10 Europe/Berlin
+
+  - forgot to add MetaProvides::Package which made cpan refuse to index
+
 1.2.4     2014-01-07 17:05:08 Europe/Berlin
 
   - Add DZ::Plugin::MetaYAML

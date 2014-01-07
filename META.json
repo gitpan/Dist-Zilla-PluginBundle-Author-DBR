@@ -4,7 +4,7 @@
       "Daniel B. <dbr@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.008, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
    ],
@@ -112,7 +112,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::DBR" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/DBR.pm",
-         "version" : "v1.2.4"
+         "version" : "v1.2.5"
       }
    },
    "release_status" : "stable",
@@ -127,7 +127,7 @@
          "web" : "https://github.com/xdbr/Dist-Zilla-PluginBundle-Author-DBR"
       }
    },
-   "version" : "1.2.4",
+   "version" : "1.2.5",
    "x_authority" : "cpan:DBR"
 }
 

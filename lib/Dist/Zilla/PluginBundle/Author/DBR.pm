@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::Author::DBR::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.4';
+  $Dist::Zilla::PluginBundle::Author::DBR::VERSION = '1.2.5';
 } # Make CPAN happy
 
 #  PODNAME: Dist::Zilla::PluginBundle::Author::DBR
@@ -38,10 +38,8 @@ class Dist::Zilla::PluginBundle::Author::DBR
                 EOLTests
                 HasVersionTests
                 InstallGuide
-                MetaJSON
-                MetaYAML
-                MetaProvides::Class
                 MetaTests
+                MetaProvides::Package
                 ModuleBuild
                 NextRelease
                 NoTabsTests
@@ -110,7 +108,7 @@ Dist::Zilla::PluginBundle::Author::DBR - DBRs Dist::Zilla PluginBundle
 
 =head1 VERSION
 
-version 1.2.4
+version 1.2.5
 
 =head1 SYNOPSIS
 
