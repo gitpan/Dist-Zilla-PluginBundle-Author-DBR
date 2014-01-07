@@ -41,6 +41,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::MetaProvides::Class" => 0,
     "Dist::Zilla::Plugin::MetaProvides::Package" => 0,
     "Dist::Zilla::Plugin::MetaTests" => 0,
+    "Dist::Zilla::Plugin::MetaYAML" => 0,
     "Dist::Zilla::Plugin::MinimumPerl" => 0,
     "Dist::Zilla::Plugin::ModuleBuild" => 0,
     "Dist::Zilla::Plugin::NextRelease" => 0,
@@ -91,7 +92,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.2.3",
+  "VERSION" => "1.2.4",
   "test" => {
     "TESTS" => "t/*.t"
   }

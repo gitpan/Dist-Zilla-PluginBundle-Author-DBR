@@ -29,6 +29,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::MetaProvides::Class
   Dist::Zilla::Plugin::MetaProvides::Package
   Dist::Zilla::Plugin::MetaTests
+  Dist::Zilla::Plugin::MetaYAML
   Dist::Zilla::Plugin::MinimumPerl
   Dist::Zilla::Plugin::ModuleBuild
   Dist::Zilla::Plugin::NextRelease
